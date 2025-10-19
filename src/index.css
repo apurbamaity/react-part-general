@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+ol {
+	list-style-type: decimal;
+	list-style-position: inside;
+	margin-left: 1.25rem;
+	/* optional spacing fix */
+}
