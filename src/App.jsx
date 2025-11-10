@@ -7,6 +7,9 @@ import Login from './Components/Login/Login.jsx'
 import ProtectedRoute from './Components/Protectedroute.jsx'
 import Home from './Components/Home/Home.jsx'
 import Richtexteditor from './Components/Richtexteditor/Richtexteditor.jsx'
+import UseRefHook from './Components/UseRef/useRefHook.jsx'
+import Contexthome from './Components/Contextlearn/Contexthome.jsx'
+import GoalTreePOC from './Components/Treeview/GoalTreePOC.jsx'
 
 
 function App() {
@@ -148,8 +151,14 @@ function App() {
 			<Routes>
 				{/* Define your routes here */}
 				<Route path="/" element={<Login />} />  {/* JWT path here */}
-				<Route path = "/home" element={<ProtectedRoute><Home/></ProtectedRoute> } />
-				<Route path = "/fulltexteditor" element = {<Richtexteditor/>} />
+				<Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
+				<Route path="/fulltexteditor" element={<Richtexteditor />} />
+				<Route path="/useref" element={<UseRefHook />} />
+				<Route path="/contextlearn" element={<Contexthome />} />
+				<Route path="/goaltreeview" element={<GoalTreePOC />} />
+
+
+
 			</Routes>
 		</BrowserRouter>
 	)
